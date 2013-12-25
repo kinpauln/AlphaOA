@@ -1,0 +1,476 @@
+<html class=" x-viewport"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>LiveBOS灵动商务架构平台</title><link rel="stylesheet" type="text/css" href="/portal/ext-portal.css">
+<link rel="stylesheet" type="text/css" href="/yui/ext3_1_1/resource/css/ext-all.css">
+<link rel="stylesheet" type="text/css" href="/abs/skin/portlet/tools.css">
+<link rel="stylesheet" type="text/css" href="/abs/skin/workflow/todotasks.css">
+<link rel="stylesheet" type="text/css" href="/abs/skin/portlet/object.css">
+<link rel="stylesheet" type="text/css" href="/yui/ext2/resource/css/xtheme-gray.css">
+<script language="javascript" src="/yui/ext3_1_1/ext-base.js"></script>
+<script language="javascript" src="/yui/ext3_1_1/ext-all.js"></script>
+<script language="javascript" src="/jsp/portlet/selectobj.js.jsp"></script>
+<script language="javascript" src="/yui/ext3_1_1/lb-ext.js"></script>
+<script language="javascript" src="/abs/skin/workflow/todotasks.js"></script>
+<script language="javascript" src="/yui/ext3_1_1/portlet-app.js"></script>
+<link rel="stylesheet" type="text/css" href="/portal/css/portal.css">
+<script language="javascript" src="/portal/script/Portal.js"></script>
+<script language="javascript" src="/portal/script/Portlet.js"></script>
+
+<script language="javascript">
+var isPortalLayout=false; 
+var baseUrl='/portal/faces/private/wangcs?';
+PortalLayout = function(){ return {layout: function(){
+if(!isPortalLayout){ 
+ isPortalLayout=true;
+
+   var viewport = new Ext.Viewport({    layout:'fit',
+  items:[{ 
+
+xtype:'portal',region:'center',items:[ 
+{
+            columnWidth:0.3, 
+                                id  : 'pcol_0'
+,items:[  {                              title: '任务处理中心',
+
+                                tools: [
+    { 
+
+        id:'refresh',
+        qtip:'刷新',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'refresh');}
+       }
+,
+    { 
+
+        id:'edit',
+        qtip:'设置',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'edit');}
+       }
+,
+    { 
+
+        id:'maximized',
+        qtip:'最大化',
+
+        handler: function(e, target, panel) 
+				{onPortletWinState(panel,'maximized');}
+       }
+],
+anchor: '100%', frame:true,  collapsible:true,  cls:'x-portlet',
+                                id  : 'p_P6cd59f82200100000007588c4088fb1a',
+
+                                contentEl  : 'P6cd59f82200100000007588c4088fb1a'
+
+                                }
+,  {                              title: '提醒信息',
+
+                                tools: [
+    { 
+
+        id:'refresh',
+        qtip:'刷新',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'refresh');}
+       }
+,
+    { 
+
+        id:'edit',
+        qtip:'设置',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'edit');}
+       }
+,
+    { 
+
+        id:'maximized',
+        qtip:'最大化',
+
+        handler: function(e, target, panel) 
+				{onPortletWinState(panel,'maximized');}
+       }
+],
+anchor: '100%', frame:true,  collapsible:true,  cls:'x-portlet',
+                                id  : 'p_P6cdb248420010000014cadc49209b62e',
+
+                                contentEl  : 'P6cdb248420010000014cadc49209b62e'
+
+                                }
+,  {                              title: '知会信息',
+
+                                tools: [
+    { 
+
+        id:'refresh',
+        qtip:'刷新',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'refresh');}
+       }
+,
+    { 
+
+        id:'maximized',
+        qtip:'最大化',
+
+        handler: function(e, target, panel) 
+				{onPortletWinState(panel,'maximized');}
+       }
+],
+anchor: '100%', frame:true,  collapsible:true,  cls:'x-portlet',
+                                id  : 'p_P8c891e40c0a800ac003137b59005ecaa',
+
+                                contentEl  : 'P8c891e40c0a800ac003137b59005ecaa'
+
+                                }
+ ]
+                         }
+,{
+            columnWidth:0.7, 
+                                id  : 'pcol_1'
+,items:[  {                              title: '新闻动态信息',
+
+                                tools: [
+    { 
+
+        id:'refresh',
+        qtip:'刷新',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'refresh');}
+       }
+,
+    { 
+
+        id:'edit',
+        qtip:'设置',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'edit');}
+       }
+,
+    { 
+
+        id:'maximized',
+        qtip:'最大化',
+
+        handler: function(e, target, panel) 
+				{onPortletWinState(panel,'maximized');}
+       }
+],
+anchor: '100%', frame:true,  collapsible:true,  cls:'x-portlet',
+                                id  : 'p_P6cd5ea642001000001fd71365bbae471',
+
+                                contentEl  : 'P6cd5ea642001000001fd71365bbae471'
+
+                                }
+,  {                              title: '我发起的任务',
+
+                                tools: [
+    { 
+
+        id:'refresh',
+        qtip:'刷新',
+
+        handler: function(e, target, panel) 
+				{onPortletMode(panel,'refresh');}
+       }
+,
+    { 
+
+        id:'maximized',
+        qtip:'最大化',
+
+        handler: function(e, target, panel) 
+				{onPortletWinState(panel,'maximized');}
+       }
+],
+anchor: '100%', frame:true,  collapsible:true,  cls:'x-portlet',
+                                id  : 'p_P6cdabe462001000000578b06e73c06bf',
+
+                                contentEl  : 'P6cdabe462001000000578b06e73c06bf'
+
+                                }
+ ]
+                         }
+]
+ }
+ ]
+	});
+viewport.doLayout();
+ setTimeout(function(){ 
+  try{   Ext.get('loading').remove();
+     Ext.get('loading-mask').remove();//.fadeOut({remove:true});
+ }catch(e){} }, 10); 
+ } }
+}; }(); 
+Ext.onReady(function(){
+ Ext.QuickTips.init();
+ PortalLayout.layout();
+});
+
+</script>
+</head>
+<body scroll="no" class="  ext-webkit ext-chrome" id="ext-gen3"><div id="ext-comp-1003" class=" x-panel x-portal" style="width: 1280px;"><div class="x-panel-bwrap" id="ext-gen12"><div class="x-panel-body x-panel-body-noheader x-column-layout-ct" id="ext-gen13" style="overflow: auto; width: 1278px; height: 618px;"><div class="x-column-inner" id="ext-gen15" style="width: 1278px;"><div id="pcol_0" class=" x-portal-column x-column" style="padding: 5px 8px 0px 0px; display: block; width: 375px;"><div id="p_P6cd59f82200100000007588c4088fb1a" class=" x-panel x-portlet" style="display: block; width: 370px;"><div class="x-panel-tl"><div class="x-panel-tr"><div class="x-panel-tc"><div class="x-panel-header x-unselectable" id="ext-gen19"><div class="x-tool x-tool-toggle" id="ext-gen27">&nbsp;</div><div class="x-tool x-tool-maximized" id="ext-gen26">&nbsp;</div><div class="x-tool x-tool-edit" id="ext-gen25">&nbsp;</div><div class="x-tool x-tool-refresh" id="ext-gen24">&nbsp;</div><span class="x-panel-header-text" id="ext-gen28">任务处理中心</span></div></div></div></div><div class="x-panel-bwrap" id="ext-gen20"><div class="x-panel-ml"><div class="x-panel-mr"><div class="x-panel-mc" id="ext-gen23"><div class="x-panel-body" id="ext-gen21" style="width: 356px;"><div id="P6cd59f82200100000007588c4088fb1a">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid" id="P6cd59f82200100000007588c4088fb1a">
+<div id="1773688" class="r">
+<a href="#" onclick="showTodoTask('/portal/faces/private/wangcs?portal:componentId=P6cd59f82200100000007588c4088fb1a&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=ShowWorkFlow&amp;Target=%2FUIProcessor%3FTable%3DWORKFLOW_TOTASKS.portlet%26Token%3D8a58c98b22f577265cdb483bb1c54b2c%26ID%3D1773688',1);"><em>2013-12-18</em> 王春生的订单下单(零星订单)DDXD13121700104</a><span class="subtitle">订单下单流程/订单明细处理/王春生/2013-12-17</span>
+</div>
+<div id="1754618" class="r">
+<a href="#" onclick="showTodoTask('/portal/faces/private/wangcs?portal:componentId=P6cd59f82200100000007588c4088fb1a&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=ShowWorkFlow&amp;Target=%2FUIProcessor%3FTable%3DWORKFLOW_TOTASKS.portlet%26Token%3D8a58c98b22f577265cdb483bb1c54b2c%26ID%3D1754618',1);"><em>2013-12-09</em> 王春生的设备维修申请(青岛办事处)WX13120900003</a><span class="subtitle">设备维修流程/维修及费用确认/王春生/2013-12-09</span>
+</div>
+<div id="1746929" class="r">
+<a href="#" onclick="showTodoTask('/portal/faces/private/wangcs?portal:componentId=P6cd59f82200100000007588c4088fb1a&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=ShowWorkFlow&amp;Target=%2FUIProcessor%3FTable%3DWORKFLOW_TOTASKS.portlet%26Token%3D8a58c98b22f577265cdb483bb1c54b2c%26ID%3D1746929',1);"><em>2013-12-05</em> <span title="王春生的收货确认单(国际社区项目一期1#、2#地块智能化工程可视对讲设备采购)SH131205047">王春生的收货确认单(国际社区项目一期1#、2#地块智能化工程可视对讲设备采购)SH131205047</span></a><span class="subtitle">收货确认单流程/订单处理/王春生/2013-12-05</span>
+</div>
+<div id="1745342" class="r">
+<a href="#" onclick="showTodoTask('/portal/faces/private/wangcs?portal:componentId=P6cd59f82200100000007588c4088fb1a&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=ShowWorkFlow&amp;Target=%2FUIProcessor%3FTable%3DWORKFLOW_TOTASKS.portlet%26Token%3D8a58c98b22f577265cdb483bb1c54b2c%26ID%3D1745342',1);"><em>2013-12-04</em> 王春生的认款申请(青岛办事处)RK1312040090</a><span class="subtitle">认款申请流程/认款申请/王春生/2013-12-04</span>
+</div>
+<div id="1306317" class="r">
+<a href="#" onclick="showTodoTask('/portal/faces/private/wangcs?portal:componentId=P6cd59f82200100000007588c4088fb1a&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=ShowWorkFlow&amp;Target=%2FUIProcessor%3FTable%3DWORKFLOW_TOTASKS.portlet%26Token%3D8a58c98b22f577265cdb483bb1c54b2c%26ID%3D1306317',1);"><em>2013-04-03</em> 王春生的订单下单(时代城)DDXD13040300071</a><span class="subtitle">订单下单流程/订单下单申请/王春生/2013-04-03</span>
+</div>
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="blog_ctrl" id="ID_TOOLBAR_TABLE">
+	<tbody><tr>
+		<td class="nav_pre">
+			<a class="button" href="/UIProcessor?Table=WORKFLOW_TOTASKS">流程中心&gt;&gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</td>
+	</tr>
+</tbody></table></div></div></div></div></div><div class="x-panel-bl x-panel-nofooter" id="ext-gen22"><div class="x-panel-br"><div class="x-panel-bc"></div></div></div></div></div><div id="p_P6cdb248420010000014cadc49209b62e" class=" x-panel x-portlet" style="display: block; width: 370px;"><div class="x-panel-tl"><div class="x-panel-tr"><div class="x-panel-tc"><div class="x-panel-header x-unselectable" id="ext-gen30"><div class="x-tool x-tool-toggle" id="ext-gen38">&nbsp;</div><div class="x-tool x-tool-maximized" id="ext-gen37">&nbsp;</div><div class="x-tool x-tool-edit" id="ext-gen36">&nbsp;</div><div class="x-tool x-tool-refresh" id="ext-gen35">&nbsp;</div><span class="x-panel-header-text" id="ext-gen39">提醒信息</span></div></div></div></div><div class="x-panel-bwrap" id="ext-gen31"><div class="x-panel-ml"><div class="x-panel-mr"><div class="x-panel-mc" id="ext-gen34"><div class="x-panel-body" id="ext-gen32" style="width: 356px;"><div id="P6cdb248420010000014cadc49209b62e">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <table class="PortletTable" cellspacing="0" cellpadding="0" width="100%">
+ 
+
+	<tbody><tr>
+
+	<td align="left" style="padding-left:6px;">·
+	 <span class="titleLink" onclick="DoPortletOperate({url:'/UIProcessor?Table=KJ_Contract_Force',returnUrl:'/portal/faces/private/wangcs?portal:componentId=P6cdb248420010000014cadc49209b62e&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW',select:false,popup:false}); ">强制开票合同基本信息</span><span class="linksummary">(5)</span>
+	</td>
+ 
+	<td align="left" style="padding-left:6px;">·
+	 <span class="titleLink" onclick="DoPortletOperate({url:'/UIProcessor?Table=KJ_Order_Delay',returnUrl:'/portal/faces/private/wangcs?portal:componentId=P6cdb248420010000014cadc49209b62e&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW',select:false,popup:false}); ">延期订单信息</span><span class="linksummary">(0)</span>
+	</td>
+ 
+
+ 
+</tr><tr><td class="nav_pre" align="right" colspan="2">
+      <a class="button" href="javascript:void(0);" onclick="loadPortlet('/portal/faces/private/wangcs?portal:componentId=P6cdb248420010000014cadc49209b62e&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW');">刷新</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+
+</tbody></table></div></div></div></div></div><div class="x-panel-bl x-panel-nofooter" id="ext-gen33"><div class="x-panel-br"><div class="x-panel-bc"></div></div></div></div></div><div id="p_P8c891e40c0a800ac003137b59005ecaa" class=" x-panel x-portlet" style="display: block; width: 370px;"><div class="x-panel-tl"><div class="x-panel-tr"><div class="x-panel-tc"><div class="x-panel-header x-unselectable" id="ext-gen41"><div class="x-tool x-tool-toggle " id="ext-gen48">&nbsp;</div><div class="x-tool x-tool-maximized " id="ext-gen47">&nbsp;</div><div class="x-tool x-tool-refresh " id="ext-gen46">&nbsp;</div><span class="x-panel-header-text" id="ext-gen49">知会信息</span></div></div></div></div><div class="x-panel-bwrap" id="ext-gen42"><div class="x-panel-ml"><div class="x-panel-mr"><div class="x-panel-mc" id="ext-gen45"><div class="x-panel-body" id="ext-gen43" style="width: 356px;"><div id="P8c891e40c0a800ac003137b59005ecaa">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" class="DataGrid_Style DataGrid_BORDER" cellspacing="0" cellpadding="2"><tbody><tr class="DataGrid_HeadStyle"> 
+<td nowrap="" align="left" style="width:20px;overflow-x:visible;"></td><td nowrap="" align="left">&nbsp;&nbsp;消息</td><td nowrap="" align="left">消息时间</td></tr>
+<tr class="DataGrid_LineTop"><td colspan="4"></td></tr><tr class="DataGrid_TR1"> <td nowrap="" align="left" style="width:20px;overflow-x:visible;"><span title=""><span class="notify_icon"><img src="/images/icon/email.png" title="未读">&nbsp;<a href="javascript:send(147009);"><img border="0" src="/images/icon/email_go.png" title="转发"></a></span></span></td><td nowrap="" align="left"><span title=""><a class="titleLink" href="javascript:void(0);" onclick="DoPortletOperateAny('/notfityAct.do?ID=147009&amp;wfid=354640','/portal/faces/private/wangcs?portal:componentId=P8c891e40c0a800ac003137b59005ecaa&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW',false,true,'');">费用报账已通过，付款金额15500</a></span></td><td nowrap="" align="left"><span title="">2013-12-09 13:35:51</span></td></tr>
+<tr class="DataGrid_TR2"> <td nowrap="" align="left" style="width:20px;overflow-x:visible;"><span title=""><span class="notify_icon"><img src="/images/icon/email.png" title="未读">&nbsp;<a href="javascript:send(144187);"><img border="0" src="/images/icon/email_go.png" title="转发"></a></span></span></td><td nowrap="" align="left"><span title=""><a class="titleLink" href="javascript:void(0);" onclick="DoPortletOperateAny('/notfityAct.do?ID=144187&amp;wfid=348415','/portal/faces/private/wangcs?portal:componentId=P8c891e40c0a800ac003137b59005ecaa&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW',false,true,'');">费用报账已通过，付款金额27503</a></span></td><td nowrap="" align="left"><span title="">2013-11-20 14:25:30</span></td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="width:20px;overflow-x:visible;"><span title=""><span class="notify_icon"><img src="/images/icon/email.png" title="未读">&nbsp;<a href="javascript:send(139160);"><img border="0" src="/images/icon/email_go.png" title="转发"></a></span></span></td><td nowrap="" align="left"><span title=""><a class="titleLink" href="javascript:void(0);" onclick="DoPortletOperateAny('/notfityAct.do?ID=139160&amp;wfid=330806','/portal/faces/private/wangcs?portal:componentId=P8c891e40c0a800ac003137b59005ecaa&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW',false,true,'');">费用报账已通过，付款金额15468.1</a></span></td><td nowrap="" align="left"><span title="">2013-10-18 09:27:21</span></td></tr>
+<tr class="DataGrid_TR2"> <td nowrap="" align="left" style="width:20px;overflow-x:visible;"><span title=""><span class="notify_icon"><img src="/images/icon/email.png" title="未读">&nbsp;<a href="javascript:send(137379);"><img border="0" src="/images/icon/email_go.png" title="转发"></a></span></span></td><td nowrap="" align="left"><span title=""><a class="titleLink" href="javascript:void(0);" onclick="DoPortletOperateAny('/notfityAct.do?ID=137379&amp;wfid=330800','/portal/faces/private/wangcs?portal:componentId=P8c891e40c0a800ac003137b59005ecaa&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW',false,true,'');">费用报账已通过，付款金额18000</a></span></td><td nowrap="" align="left"><span title="">2013-10-08 11:58:26</span></td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="width:20px;overflow-x:visible;"><span title=""><span class="notify_icon"><img src="/images/icon/email.png" title="未读">&nbsp;<a href="javascript:send(135483);"><img border="0" src="/images/icon/email_go.png" title="转发"></a></span></span></td><td nowrap="" align="left"><span title=""><a class="titleLink" href="javascript:void(0);" onclick="DoPortletOperateAny('/notfityAct.do?ID=135483&amp;wfid=325619','/portal/faces/private/wangcs?portal:componentId=P8c891e40c0a800ac003137b59005ecaa&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW',false,true,'');">费用报账已通过，付款金额10517</a></span></td><td nowrap="" align="left"><span title="">2013-09-18 13:37:45</span></td></tr>
+</tbody></table>
+<table width="100%" class="blog_ctrl"><tbody><tr><td class="nav_pre"><a class="button" href="javascript:void(0);" onclick="loadPortlet('/portal/faces/private/wangcs?portal:componentId=P8c891e40c0a800ac003137b59005ecaa&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW');">刷新</a><span class="tabsp" style="WIDTH: 12px">|</span><a class="button" href="/UIProcessor?Table=WORKFLOW_NOTIFY&amp;Token=3b341b535f25b116e605706b92b085f4">更多&gt;&gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table>
+
+<script type="text/javascript">
+function refreshPortlet(){
+	var bs = document.getElementsByTagName('a');
+	for(var i=0;i<bs.length;i++){
+		if(bs[i].innerText=='刷新'){
+			bs[i].click();
+		}
+	}
+}
+function send(rid){
+	var url ="/OperateProcessor?operate=NotifyForward&Table=WORKFLOW_NOTIFY&WindowType=1&extWindow=true&PopupWin=true&rid="+rid;
+	var w =new LBUI.showModalDialog(url,{fun:{
+		callback : function(result){		
+			refreshPortlet();
+	}
+	}});
+}
+</script></div></div></div></div></div><div class="x-panel-bl x-panel-nofooter" id="ext-gen44"><div class="x-panel-br"><div class="x-panel-bc"></div></div></div></div></div></div><div id="pcol_1" class=" x-portal-column x-column" style="padding: 5px 8px 0px 0px; display: block; width: 886px;"><div id="p_P6cd5ea642001000001fd71365bbae471" class=" x-panel x-portlet" style="display: block; width: 881px;"><div class="x-panel-tl"><div class="x-panel-tr"><div class="x-panel-tc"><div class="x-panel-header x-unselectable" id="ext-gen51"><div class="x-tool x-tool-toggle" id="ext-gen59">&nbsp;</div><div class="x-tool x-tool-maximized" id="ext-gen58">&nbsp;</div><div class="x-tool x-tool-edit" id="ext-gen57">&nbsp;</div><div class="x-tool x-tool-refresh" id="ext-gen56">&nbsp;</div><span class="x-panel-header-text" id="ext-gen60">新闻动态信息</span></div></div></div></div><div class="x-panel-bwrap" id="ext-gen52"><div class="x-panel-ml"><div class="x-panel-mr"><div class="x-panel-mc" id="ext-gen55"><div class="x-panel-body" id="ext-gen53" style="width: 867px;"><div id="P6cd5ea642001000001fd71365bbae471">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" class="DataGrid_Style" cellspacing="0" cellpadding="2"><tbody><tr class="DataGrid_HeadStyle"> 
+<td nowrap="" align="left">&nbsp;&nbsp;标题</td><td nowrap="" align="left">内容</td><td nowrap="" align="left">发布人</td><td nowrap="" align="left">发布时间</td><td nowrap="" align="left">新闻类别</td></tr>
+<tr class="DataGrid_LineTop"><td colspan="7"></td></tr><tr class="DataGrid_TR1"> <td nowrap="" align="left">&nbsp;&nbsp;<a title="" class="titleLink" href="javascript:DoCommand('/UIProcessor?UIMode=UIMODE.NEWSBOARD.RECORD&Table=tBlog&ID=29',false,true,'',2);">外购产品采购报账操作说明-20110413</a></td><td nowrap="" align="left"><span title="">附件为外购产品采购报账操作说明</span></td><td nowrap="" align="left"><span title=""><span class="Display">管理员</span></span></td><td nowrap="" align="left"><span title="">2011-04-13 00:00:00</span></td><td nowrap="" align="left"><span title=""><span class="Display">文件与通告</span></span></td></tr>
+<tr class="DataGrid_TR2"> <td nowrap="" align="left">&nbsp;&nbsp;<a title="" class="titleLink" href="javascript:DoCommand('/UIProcessor?UIMode=UIMODE.NEWSBOARD.RECORD&Table=tBlog&ID=28',false,true,'',2);">研发部门扣款操作说明-20110407</a></td><td nowrap="" align="left"><span title="">附件为研发部门扣款操作说明</span></td><td nowrap="" align="left"><span title=""><span class="Display">管理员</span></span></td><td nowrap="" align="left"><span title="">2011-04-13 00:00:00</span></td><td nowrap="" align="left"><span title=""><span class="Display">文件与通告</span></span></td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left">&nbsp;&nbsp;<a title="" class="titleLink" href="javascript:DoCommand('/UIProcessor?UIMode=UIMODE.NEWSBOARD.RECORD&Table=tBlog&ID=27',false,true,'',2);">设备维修流程修改-2011.03.21</a></td><td nowrap="" align="left"><span title="">附件为操作说明</span></td><td nowrap="" align="left"><span title=""><span class="Display">管理员</span></span></td><td nowrap="" align="left"><span title="">2011-03-21 00:00:00</span></td><td nowrap="" align="left"><span title=""><span class="Display">文件与通告</span></span></td></tr>
+<tr class="DataGrid_TR2"> <td nowrap="" align="left">&nbsp;&nbsp;<a title="" class="titleLink" href="javascript:DoCommand('/UIProcessor?UIMode=UIMODE.NEWSBOARD.RECORD&Table=tBlog&ID=26',false,true,'',2);">设备维修流程修改-2011.03.16</a></td><td nowrap="" align="left"><span title="">附件为设备维修流程修改</span></td><td nowrap="" align="left"><span title=""><span class="Display">管理员</span></span></td><td nowrap="" align="left"><span title="">2011-03-16 00:00:00</span></td><td nowrap="" align="left"><span title=""><span class="Display">文件与通告</span></span></td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left">&nbsp;&nbsp;<a title="" class="titleLink" href="javascript:DoCommand('/UIProcessor?UIMode=UIMODE.NEWSBOARD.RECORD&Table=tBlog&ID=25',false,true,'',2);">还款申请操作说明-2011.03.14</a></td><td nowrap="" align="left"><span title="">附件为还款申请操作说明</span></td><td nowrap="" align="left"><span title=""><span class="Display">管理员</span></span></td><td nowrap="" align="left"><span title="">2011-03-14 00:00:00</span></td><td nowrap="" align="left"><span title=""><span class="Display">文件与通告</span></span></td></tr>
+</tbody></table>
+<table width="100%" class="blog_ctrl"><tbody><tr><td class="nav_pre"><a class="button" href="javascript:void(0);" onclick="loadPortlet('/portal/faces/private/wangcs?portal:componentId=P6cd5ea642001000001fd71365bbae471&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=VIEW');">刷新</a><span class="tabsp" style="WIDTH: 12px">|</span><a class="button" href="/UIProcessor?Table=tBlog&amp;Token=87dc8f61d4a12f4827c41e7d35a05d9b">更多&gt;&gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table>
+</div></div></div></div></div><div class="x-panel-bl x-panel-nofooter" id="ext-gen54"><div class="x-panel-br"><div class="x-panel-bc"></div></div></div></div></div><div id="p_P6cdabe462001000000578b06e73c06bf" class=" x-panel x-portlet" style="display: block; width: 881px;"><div class="x-panel-tl"><div class="x-panel-tr"><div class="x-panel-tc"><div class="x-panel-header x-unselectable" id="ext-gen62"><div class="x-tool x-tool-toggle" id="ext-gen69">&nbsp;</div><div class="x-tool x-tool-maximized" id="ext-gen68">&nbsp;</div><div class="x-tool x-tool-refresh" id="ext-gen67">&nbsp;</div><span class="x-panel-header-text" id="ext-gen70">我发起的任务</span></div></div></div></div><div class="x-panel-bwrap" id="ext-gen63"><div class="x-panel-ml"><div class="x-panel-mr"><div class="x-panel-mc" id="ext-gen66"><div class="x-panel-body" id="ext-gen64" style="width: 867px;"><div id="P6cdabe462001000000578b06e73c06bf">
+
+
+
+
+
+
+
+
+
+
+<script language="javascript" src="/script/tools.js"></script>
+<script language="javascript" src="/script/ApexRowSet.js"></script>
+<script language="javascript" src="/BsTree/core/lang/Bs_Cookie.lib.js"></script>
+<script language="javascript" src="/script/ViewNavigation.js"></script>
+<script language="javascript" src="/script/showdate.js"></script>
+<script language="javascript" src="/script/opedit.js"></script>
+<script language="javascript" src="/script/ajax/xmlextras.js"></script>
+<script language="javascript">
+
+function ClickRow(wfid,stepid)
+{
+	if( !SelectRow(event))
+		return false;
+}
+function DBClickRow(wfid,stepid){
+   if(typeof(stepid) == "undefined")
+      document.location= "/portal/faces/private/wangcs?portal:componentId=P6cdabe462001000000578b06e73c06bf&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=ShowWorkFlow&wfid="+wfid
+   else
+	   document.location= "/portal/faces/private/wangcs?portal:componentId=P6cdabe462001000000578b06e73c06bf&amp;portal:type=action&amp;portal:isSecure=false&amp;ACTION=ShowWorkFlow&wfid="+wfid+"&stepId="+stepid;
+}
+</script>
+<!-- <LINK type="text/css" href="/abs/skin/portlet/tools.css" rel="stylesheet"> -->
+<table width="100%" cellspacing="0" cellpadding="2">
+
+	
+
+	
+		<form action="/StartWorkflow" name="Task_form"></form>
+			<tbody><tr>
+				<td nowrap="" style="position: relative;top:4px">选择工作流程</td>
+				<td nowrap="">
+					<select name="Workflow"><option value="KJ_WF_BillApply">开票申请流程</option>
+<option value="KJ_WF_BillCanApply">发票作废流程</option>
+<option value="KJ_WF_BonusApply">补贴申请流程</option>
+<option value="KJ_WF_ClientRetMoney">客户退款流程</option>
+<option value="KJ_WF_ContractChange">合同变更流程</option>
+<option value="KJ_WF_ContractCheck">合同评审流程</option>
+<option value="KJ_WF_ContractRebate">合同折让流程</option>
+<option value="KJ_WF_DeliveryApply">发货通知单流程</option>
+<option value="KJ_WF_DrawMoneyApply">认款申请流程</option>
+<option value="KJ_WF_EntrustPay">委托付款流程</option>
+<option value="KJ_WF_FeeApply">费用报账单流程</option>
+<option value="KJ_WF_FundTransfer">资金转移流程</option>
+<option value="KJ_WF_GetProApply">收货确认单流程</option>
+<option value="KJ_WF_IncomeNotify">汇款通知单流程</option>
+<option value="KJ_WF_Loan">借款申请单流程</option>
+<option value="KJ_WF_Order">订单下单流程</option>
+<option value="KJ_WF_OrderAlter">订单变更流程</option>
+<option value="KJ_WF_OrderDelay">订单延期流程</option>
+<option value="KJ_WF_OutProApply">外购产品采购流程</option>
+<option value="KJ_WF_Permission">员工权限申请流程</option>
+<option value="KJ_WF_PreTurnGoods">预付款转货款流程</option>
+<option value="KJ_WF_ProMade">产品定制流程</option>
+<option value="KJ_WF_QualityMargin">质保金申请流程</option>
+<option value="KJ_WF_QuoteApply">报价申请流程</option>
+<option value="KJ_WF_RecallApply">召回申请流程</option>
+<option value="KJ_WF_RefundApply">还款申请流程</option>
+<option value="KJ_WF_RepairApply">设备维修流程</option>
+<option value="KJ_WF_RetMoneyApply">退款申请流程</option>
+<option value="KJ_WF_RetProApply">退货申请单流程</option>
+<option value="KJ_WF_StepProject">立项申请流程</option>
+<option value="WF_SystemFeedback">系统反馈单流程</option></select>
+				</td>
+				<td>&nbsp;</td>
+			<td nowrap=""><input type="submit" value="&nbsp;开始新流程&nbsp;">
+			</td>
+			<td width="90%">&nbsp;</td>
+		</tr>
+		
+
+		<tr><td colspan="5">
+<table width="100%" class="Browse_Style" cellspacing="0" cellpadding="2"><tbody><tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('363010','-1','_self')">王春生的订单下单(零星订单)SEORD56819</span><span class="title_gray">(<span title="">2013-12-25</span>/<span title="">订单下单流程</span>/<span title="">王春生</span>/<span title=""></span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('362956','-1','_self')">王春生的订单下单(零星订单)SEORD56818</span><span class="title_gray">(<span title="">2013-12-25</span>/<span title="">订单下单流程</span>/<span title="">王春生</span>/<span title=""></span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('362919','-1','_self')">王春生的费用报帐单(青岛办事处05.01.20)BZ1312</span><span class="title_gray">(<span title="">2013-12-24</span>/<span title="">费用报账单流程</span>/<span title="">王春生</span>/<span title="">客服人员</span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('362780','-1','_self')">王春生的设备维修申请(青岛办事处)WX13122400011</span><span class="title_gray">(<span title="">2013-12-24</span>/<span title="">设备维修流程</span>/<span title="">王春生</span>/<span title="">客服提交</span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('362732','-1','_self')">王春生的设备维修申请(青岛办事处)WX13122400008</span><span class="title_gray">(<span title="">2013-12-24</span>/<span title="">设备维修流程</span>/<span title="">王春生</span>/<span title="">维修部</span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('362259','-1','_self')">王春生的合同评审(盛世华章一、二期)HT1312230001</span><span class="title_gray">(<span title="">2013-12-23</span>/<span title="">合同评审流程</span>/<span title="">王春生</span>/<span title="">客服核准</span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('361557','-1','_self')">王春生的开票申请(青岛7080项目)KP1312200026</span><span class="title_gray">(<span title="">2013-12-20</span>/<span title="">开票申请流程</span>/<span title="">王春生</span>/<span title=""></span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('361550','-1','_self')">王春生的开票申请(李沧万达)KP1312200022</span><span class="title_gray">(<span title="">2013-12-20</span>/<span title="">开票申请流程</span>/<span title="">王春生</span>/<span title=""></span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('361547','-1','_self')">王春生的费用报帐单(青岛办事处05.01.20)XMW131</span><span class="title_gray">(<span title="">2013-12-20</span>/<span title="">费用报账单流程</span>/<span title="">王春生</span>/<span title="">出纳</span>)</span></td><td width="80%">&nbsp;</td></tr>
+<tr class="DataGrid_TR1"> <td nowrap="" align="left" style="PADDING-LEFT: 6px">· </td><td nowrap="" align="left"><span class="titleLink" onclick="DBClickRow('361527','-1','_self')">王春生的汇款通知单(扬州浩宇科技发展有限公司)HK13122</span><span class="title_gray">(<span title="">2013-12-20</span>/<span title="">汇款通知单流程</span>/<span title="">王春生</span>/<span title=""></span>)</span></td><td width="80%">&nbsp;</td></tr>
+</tbody></table>
+		</td></tr>
+		
+
+</tbody></table></div></div></div></div></div><div class="x-panel-bl x-panel-nofooter" id="ext-gen65"><div class="x-panel-br"><div class="x-panel-bc"></div></div></div></div></div></div><div class="x-clear" id="ext-gen16"></div></div></div></div></div>
+
+
+
+
+
+
+
+<script language="javascript" src="/portal/script/Layout.js"></script>
+
+
+<div id="ext-comp-1001" class=" x-tip" style="position: absolute; z-index: 20000; visibility: hidden; display: none;"><div class="x-tip-tl"><div class="x-tip-tr"><div class="x-tip-tc"><div class="x-tip-header x-unselectable" id="ext-gen4"><span class="x-tip-header-text"></span></div></div></div></div><div class="x-tip-bwrap" id="ext-gen5"><div class="x-tip-ml"><div class="x-tip-mr"><div class="x-tip-mc" id="ext-gen8"><div class="x-tip-body" id="ext-gen6" style="height: auto;"></div></div></div></div><div class="x-tip-bl x-panel-nofooter" id="ext-gen7"><div class="x-tip-br"><div class="x-tip-bc"></div></div></div></div><div class="x-tip-anchor x-tip-anchor-top" id="ext-gen9" style="z-index: 20001;"></div></div></body></html>

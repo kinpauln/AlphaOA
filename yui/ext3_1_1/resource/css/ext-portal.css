@@ -1,0 +1,359 @@
+@import "/skin/components/components.css";
+td {
+	font-family: "ËÎÌו";
+	font-size: 12px;
+	font-style: normal;
+}
+
+TABLE.Browse_Style{
+	line-height: 18px;
+	font-size: 10px;
+	padding: 1px;
+}
+
+TABLE.Browse_Style TD{
+	border-left-width:0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-left-color: #D0D0D0;
+	border-bottom-width: 0px;
+	border-bottom-color: #D0D0D0;
+	color: #808080;
+}
+TD.Browse_LastCol{
+	font-size: 12px;
+	color: #000000;
+	background-color:#FFFFFF;
+	font-weight: bold;
+}
+
+TR.Browse_TR1{
+	background-color: #FFFFFF;
+}
+
+TR.Browse_TR2{
+	background-color: #F0F0F0;
+}
+
+TR.Browse_MouseOver
+{
+	cursor: hand;
+}
+
+TR.Browse_HeadStyle{
+	color:  #FFFFFF;
+	background-color: #6c90b4;
+	line-height: 18px;
+	text-align: bottom;
+	padding: 1px;
+
+}
+TR.Browse_HeadStyle TD{
+	font-size: 14px;
+	font-family: "ËÎÌו";
+	color:  #FFFFFF;
+	background-color: #6c90b4;
+	font-weight: normal;
+	vertical-align: middle;
+}
+TR.Browse_Selected
+{
+	color: #FFFFFF;
+	background-color: #82a7ca;
+	cursor: hand
+}
+TR.Browse_Selected TD
+{
+	color: #FFFFFF;
+	background-color: #82a7ca;
+}
+
+TR.Browse_MouseOver2
+{
+	color: #FFFFFF;
+	background-color: #00CCFF;
+	cursor: hand
+}
+
+TR.Browse_Selected2
+{
+	color: #FFFFFF;
+	background-color: #0066FF;
+	cursor: hand
+}
+
+
+TR.Browse_MouseOverTR2
+{
+	/*background-color: #F0F0F0;*/
+}
+
+TR.Browse_LineTop
+{
+	background-color: #DDDDDD;
+	line-height : 1px;
+}
+
+TR.Browse_LineBottom
+{
+	background-color: #ECECEC;
+	line-height : 1px;
+}
+
+TR.Browse_Line
+{
+	background-color: #E6E6E6;
+	line-height : 1px;
+}
+
+TR.Browse_Button{
+	background-color: #FFFFFF;
+	padding-right: 9px;
+	text-align: right;
+}
+
+TR.Browse_Property{
+	 background-color: #FFFFFF;
+	 border-top-width: 1px;
+	 border-right-width: 1px;
+	 border-bottom-width: 1px;
+ 	 border-left-width: 1px;
+	 border-style: none;
+}
+
+TD.Browse_TD{
+	background-color: #F2F2F2;
+	padding-left: 5px;
+}
+TD.CellTitle_RED
+{
+	color:#ff0000;
+	background-color: #c6dcec;
+	font-family: "Arial";
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+	line-height : 23px;
+	padding-right: 2px;
+}
+
+TD.Browse_TD_RIGHT{
+	text-align: right;
+	padding-right: 18px;
+}
+.Browse_Style SPAN
+{
+	Cursor:hand;
+	color: #808080;
+	text-decoration:none;
+	/*behavior:url(/css/blogspan.htc);
+	event:expression(
+		onmouseover = function()
+		{
+	       this.style.textDecoration  = 'underline';
+      	   this.style.color = '#FF0000';
+		},
+		onmouseout = function()
+		{
+			if(this.className=="titleLink")
+         		this.style.color = '#000000';
+         	else
+         		this.style.color = '#808080';
+            this.style.textDecoration  = 'none';
+		}
+	);*/
+}
+.Browse_Style SPAN:hover
+{
+	text-decoration:underline;
+	color: #ff0000;
+}
+.Browse_Style SPAN.titleLink  {
+    color: #000000;
+	font-size: 12px;
+	font-family: "ËÎÌו";
+}
+
+.Browse_Style A.titleLink:link
+{
+	color: #000000;
+	cursor: pointer;
+	text-decoration:none;
+}
+.Browse_Style a.titleLink:visited{
+	color: #000000;
+	cursor: pointer;
+	text-decoration:none;
+}
+.Browse_Style A.titleLink:hover
+{
+	color: red;
+	cursor: pointer;
+	text-decoration:underline;
+}
+
+input.Browse_GO
+{
+	color: #000000;
+	font-family: Tahoma;
+	font-size: 9px;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+ 	border-left-width: 1px;
+	border-bottom-width: 1px;
+	width: 20px;
+	height: 15px;
+}
+
+
+TABLE.INSIDE_Style{
+	line-height: 16px;
+	font-size: 10px;
+}
+
+TABLE.INSIDE_Style TD{
+	border-left-width:0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-left-color: #D0D0D0;
+	border-bottom-width: 0px;
+	border-bottom-color: #D0D0D0;
+	color: #000000;
+
+}
+
+
+.webdings {
+	font-family: "Webdings";
+	font-size: 9px;
+	cursor : hand;
+}
+
+/**/
+TABLE.DataGrid_Style{
+	line-height: 16px;
+	border:0px;
+	border-style: solid;
+}
+
+TABLE.DataGrid_Style TD{
+	border-left-width:0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-left-color: #D0D0D0;/*cccccc;*/
+	border-bottom-width: 1px;
+	border-bottom-color: #D0D0D0;/*cccccc;*/
+	color: black;
+}
+TD.DataGrid_LastCol{
+	font-size: 12px;
+	color: #000000;
+	background-color:#FFFFFF;
+	font-weight: bold;
+}
+
+TR.DataGrid_TR1{
+	background-color: #FFFFFF;
+}
+
+TR.DataGrid_TR2{
+	background-color: #F0F0F0;
+}
+
+TR.DataGrid_MouseOver
+{
+	/*color: #000000;*/
+	/*background-color: #FFFFEE;*/
+	cursor: hand;
+}
+DIV.DataGrid_Scroll{
+	border-top:2px #00008F solid;
+}
+TR.DataGrid_HeadStyle{
+	font-size: 12px;
+	color:  #FFFFFF;
+	background-color: #6c90b4;
+	font-weight: bold;
+	line-height: 14px;
+	text-align: bottom;
+	vertical-align: middle;
+}
+TR.DataGrid_HeadStyle TD{
+	color:  #000000;
+	background-color: #DDE2EA/*#6c90b4*/;
+	font-weight: normal;
+	border-top-style:solid;
+	border-top-color:#00008F;
+	border-top-width:0px;
+}
+TR.DataGrid_Selected
+{
+	color: #000000;
+	background-color: #F4F5F9/*#82a7ca*/;
+	cursor: hand
+}
+TR.DataGrid_Selected TD
+{
+	color: #000000;
+	background-color: #c1cdd8/*#F4F5F9/*#82a7ca*/;
+}
+
+TR.DataGrid_MouseOver2
+{
+	color: #FFFFFF;
+	background-color: #00CCFF;
+	cursor: hand
+}
+
+TR.DataGrid_Selected2
+{
+	color: #FFFFFF;
+	background-color: #0066FF;
+	cursor: hand
+}
+
+
+TR.DataGrid_MouseOverTR2
+{
+	/*background-color: #F0F0F0;*/
+}
+
+TR.DataGrid_LineTop
+{
+	background-color: #DDDDDD;
+	line-height : 1px;
+}
+
+TR.DataGrid_LineBottom
+{
+	background-color: #ECECEC;
+	line-height : 1px;
+}
+
+TR.DataGrid_Line
+{
+	background-color: #E6E6E6;
+	line-height : 1px;
+}
+
+TR.DataGrid_Button{
+	background-color: #FFFFFF;
+	padding-right: 9px;
+	text-align: right;
+}
+
+TR.DataGrid_Property{
+	 background-color: #FFFFFF;
+	 border-top-width: 1px;
+	 border-right-width: 1px;
+	 border-bottom-width: 1px;
+ 	 border-left-width: 1px;
+	border-style: none;
+}

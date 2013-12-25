@@ -1,0 +1,832 @@
+.Tools {
+  margin: 0px ;
+  text-transform: capitalize ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 12pt; font-weight: bold ;
+}
+A:visited
+{
+	color: #333333;
+	/*text-decoration: none;*/
+}
+A:hover
+{
+	color: #FF0000;
+}
+a.button
+{
+	color: #003399;
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	cursor : pointer;
+	text-decoration: none;
+	font-weight: normal;
+	/*behavior:url(/abs/skin/portlet/button.htc);*/
+}
+a.button:hover{
+	text-decoration: underline;
+    text-decoration: #FF0000;
+}
+table.PortletTable a.button img {
+	position:relative;
+	top:3px;
+}
+a.button_recop
+{
+	color: #003399;
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	cursor : pointer;
+	text-decoration: underline;
+	font-weight: normal;
+    padding-left:2px;
+    padding-right:2px;
+	/*behavior:url(/abs/skin/portlet/button.htc);*/
+}
+a.button_recop:hover{
+	text-decoration: underline;
+    text-decoration: #FF0000;
+}
+a.titleLink
+{
+	text-decoration: none;
+	font-size: 12px;
+	Cursor:pointer;
+	/*behavior:url(/css/blogspan.htc);*/
+	line-height: 18px;
+	padding-left: 2px;
+	position: relative;
+	bottom:2px;
+}
+a.titleLink:hover{
+	text-decoration: underline;
+    color : #FF0000;
+}
+/*RefLink*/
+span.link
+{
+	color: #003399;
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	cursor : pointer;
+	text-decoration: underline;
+	font-weight: normal;
+}
+TABLE.PortletTable
+{
+}
+TABLE.PortletTable TD
+{
+	line-height: 16px;
+}
+
+TABLE.PortletTable TD.Line
+{
+	line-height:5px;
+	background:url(/images/icon/menuline.gif) no-repeat right center;
+	height:5px;
+}
+TABLE.PortletTable SPAN.linksummary
+{
+	font-size:14px;
+}
+SPAN.titleLink
+{
+	font-size: 12px;
+	Cursor:pointer;
+	/*behavior:url(/css/blogspan.htc);*/
+	line-height: 18px;
+	padding-left: 0px;
+	position: relative;
+	bottom:0px;
+	text-decoration:none;
+	color: #000000;
+	/*event:expression(
+		onmouseover = function()
+		{
+	       this.style.textDecoration  = 'underline';
+      	   this.style.color = '#FF0000';
+		},
+		onmouseout = function()
+		{
+			this.style.color = '#000000';
+            this.style.textDecoration  = 'none';
+		}
+	);*/
+}
+SPAN.titleLink:hover
+{
+	text-decoration:underline;
+	color: #ff0000;
+}
+SPAN.title_gray  {
+    color: #888888;
+	font-size: 12px;
+	font-family: "宋体";
+	position: relative;
+	bottom:2px;
+	cursor:default;
+	behavior:url("");
+}
+SPAN.contentLink
+{
+	font-size: 12px;
+	Cursor:pointer;
+	bottom:0px;
+}
+
+.Browse_Style SPAN.title_gray SPAN{
+	
+	cursor:default;
+	behavior:url("");
+}
+.Browse_Style SPAN.title_gray span.link
+{
+	Cursor:pointer;
+}
+table.PortletTable {
+	background-color: white;
+	border-width: 0px;
+	border-style: none;
+}
+
+table.PortletTable td {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	/*color: #003399;
+	background-color: white;*/
+	padding-top:2px;
+	padding-bottom:2px;
+}
+table.PortletTable td.label {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+}
+#tr_type_obj.ObjectDesc {
+	width: 170px;
+	overflow-x: hidden;
+	border-bottom:1ps solid #5794BF;
+	cursor: normal;
+}
+DIV.DataGrid_Scroll{
+	/*border-top:2px #00008F solid;*/
+}
+TR.DataGrid_HeadStyle{
+	color:#fff;
+}
+TR.DataGrid_HeadStyle TD{
+	font:bold 12px/20px tahoma;
+	color:#000;
+	background:transparent; 
+	border-bottom:1px #00008F solid;
+}
+TR.DataGrid_Selected
+{
+	color: #000000;
+	background-color: #F4F5F9/*#82a7ca*/;
+	cursor: pointer
+}
+TR.DataGrid_Selected TD
+{
+	color: #000000;
+	background-color: #c1cdd8/*#F4F5F9/*#82a7ca*/;
+}
+
+TR.DataGrid_MouseOver2
+{
+	color: #FFFFFF;
+	background-color: #00CCFF;
+	cursor: pointer
+}
+
+TR.DataGrid_Selected2
+{
+	color: #FFFFFF;
+	background-color: #0066FF;
+	cursor: pointer
+}
+
+
+TR.DataGrid_MouseOverTR2
+{
+	/*background-color: #F0F0F0;*/
+}
+
+TR.DataGrid_LineTop
+{
+	background-color: #DDDDDD;
+	line-height : 1px;
+}
+
+TR.DataGrid_LineBottom
+{
+	background-color: #ECECEC;
+	line-height : 1px;
+}
+
+TR.DataGrid_Line
+{
+	background-color: #E6E6E6;
+	line-height : 1px;
+}
+
+TR.DataGrid_Button{
+	background-color: #FFFFFF;
+	padding-right: 9px;
+	text-align: right;
+}
+
+TR.DataGrid_Property{
+	 background-color: #FFFFFF;
+	 border-top-width: 1px;
+	 border-right-width: 1px;
+	 border-bottom-width: 1px;
+ 	 border-left-width: 1px;
+	border-style: none;
+}
+
+TABLE.portlet_ctrl{
+	BACKGROUND-COLOR: #F4F5F9;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+TABLE.portlet_ctrl TR{
+}
+TABLE.portlet_ctrl TD{
+	text-align: left;
+	border-bottom-color: #EEF3FB;
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+}
+TABLE.portlet_ctrl TD.nav_right{
+	
+	 font-weight:normal;
+	 color: #FFFFFF;
+	 
+	 cursor:pointer;
+	 PADDING-RIGHT: 0.3em; 
+	 PADDING-LEFT: 0.3em;
+	 PADDING-TOP: 0.3em; 
+	 PADDING-BOTTOM: 0.0em; 
+
+	 COLOR: black/*#003380*/;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: #DDE2EA;
+}
+TABLE.portlet_ctrl TD.nav_left{
+	
+	height:18px;
+	font-family: Arial,Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 18px;
+	BACKGROUND-IMAGE: url(/images/bar/column-head-3.gif);
+	COLOR: #003380;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: #F4F5F9;
+	border-left-style: none;
+	border-right-style: none;
+	vertical-align: bottom;
+	width: 16px;
+	
+}
+TABLE.portlet_ctrl TD.nav_pre{
+	BACKGROUND-COLOR: #F4F5F9;
+	width: 100%;
+	padding-left:10px;
+	vertical-align: middle;
+}
+TABLE.portlet_ctrl TD.nav_mark{
+	 font-weight:normal;
+	 color: #FFFFFF;
+	 
+	 PADDING-RIGHT: 0.1em; 
+	 PADDING-LEFT: 0.1em;
+	 PADDING-TOP: 0.0em; 
+	 PADDING-BOTTOM: 0.0em; 
+	 cursor:pointer;
+
+	 COLOR: black;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: #DDE2EA;
+	
+}
+TABLE.blog_ctrl{
+	/*BACKGROUND-COLOR: #F4F5F9;*/
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+TABLE.blog_ctrl TR{
+}
+TABLE.blog_ctrl TD{
+	text-align: right;
+	border:none;
+	padding-top:5px;
+}
+TABLE.blog_ctrl TD.nav_pre{
+	BACKGROUND-COLOR: #FFFFFF;
+	width: 100%;
+	padding-left:10px;
+	vertical-align: middle;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999/*#003399*/;
+	text-align: right;
+}
+.tabsp {
+	font-size: 12px;
+	color: #aca899;
+	text-align: center;
+    vertical-align: bottom;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+TD.ButtonContainer
+{
+	background-image: url(/images/bar/ButtonBar.gif);
+	cursor: default;
+	background-repeat: repeat-x;
+	border-bottom-color: #00008F;
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+	height: 19px;
+}
+/*银灰*/
+TD.column-head-3
+{
+	height:19px;
+	font-family: Arial,Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 18px;
+	BACKGROUND-IMAGE: url(../images/bar/column-head-3.gif);
+	COLOR: #003380;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: #F4F5F9/*#F7FAF7*/;
+	border-top-style: solid;
+	border-top-width: 0px;
+	border-top-color: #FFFFFF;
+	border-left-style: none;
+	border-right-style: none;
+	vertical-align: bottom;
+	width: 16px;
+}
+TD.column-right2
+{
+	 font-weight:normal;
+	 color: #FFFFFF;
+	 
+	 PADDING-RIGHT: 0.3em; 
+	 PADDING-LEFT: 0.3em;
+	 PADDING-TOP: 0.3em; 
+	 PADDING-BOTTOM: 0.1em; 
+	 cursor:pointer;
+
+	 COLOR: black/*#003380*/;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: #DDE2EA;
+}
+TD.column-head-3
+{
+	height:19px;
+	font-family: Arial,Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 18px;
+	BACKGROUND-IMAGE: url(/images/bar/column-head-3.gif);
+	COLOR: #003380;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: #F4F5F9/*#F7FAF7*/;
+	border-top-style: solid;
+	border-top-width: 0px;
+	border-top-color: #FFFFFF;
+	border-left-style: none;
+	border-right-style: none;
+	vertical-align: bottom;
+	width: 16px;
+	padding: 0px 0px 0px 0px;
+}
+.tabSheet{
+    background-color: #FFFFFF;
+    border-color: #999999;
+    border-width: 0px 1px 1px 1px;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-style: solid;
+	border-right-style: none;
+}
+/*组织结构树*/
+TABLE.MenuTreeContainer
+{
+	
+}
+TABLE.MenuTreeContainer TR.DataGrid_Button TD
+{
+	padding-right: 10px;
+	background-color: EFEFEF;
+	text-align: left;
+}
+.readonly
+{
+	/*behavior:url(/css/TextReadonly.htc);*/
+	background-color: #ece9d8;
+
+}
+TABLE.DataGrid_Style{
+	border-collapse:collapse；//内容为空时显示边框
+}
+
+TABLE.DataGrid_Style TD{
+	vertical-align:middle;
+	border-bottom-width: 0px;
+}
+/**两种大字体样式**/
+TABLE.DataGrid_Large TR.DataGrid_TR1 TD{
+	height:24px;
+}
+TABLE.DataGrid_Large TR.DataGrid_TR2 TD{
+	height:24px;
+}
+TABLE.DataGrid_Large TR TD a.titleLink{
+	font-size:130%;
+	font-weight: bold;
+}
+TABLE.DataGrid_Large TR TD a.button_recop{
+	font-size:130%;
+	font-weight: bold;
+}
+TABLE.DataGrid_Large TR TD SPAN{
+	font-size:130%;
+	font-weight: bold;
+	display:inline-block;
+}
+TABLE.DataGrid_XLarge TR TD SPAN.link{
+	font-size:120%;
+	font-weight: bold;
+}
+
+TABLE.DataGrid_XLarge TR.DataGrid_TR1 TD{
+	height:32px;
+}
+TABLE.DataGrid_XLarge TR.DataGrid_TR2 TD{
+	height:32px;
+}
+TABLE.DataGrid_XLarge TR TD a.titleLink{
+	font-size:120%;
+	font-weight: bold;
+}
+TABLE.DataGrid_XLarge TR TD a.button_recop{
+	font-size:150%;
+	font-weight: bold;
+}
+TABLE.DataGrid_XLarge TR TD SPAN{
+	font-size:150%;
+	font-weight: bold;
+}
+TABLE.DataGrid_XLarge TR TD SPAN.link{
+	font-size:120%;
+	font-weight: bold;
+}
+
+TR.DataGrid_TR2{
+	background-color: white;
+}
+TABLE TR TD A.titleLink{
+	top: 1px;
+}
+/*列表风格，1背景 2表格线*/
+TABLE.DataGrid_ROW{
+}
+TABLE.DataGrid_ROW TR.DataGrid_HeadStyle {
+}
+TABLE.DataGrid_ROW TR.DataGrid_HeadStyle TD{
+	background-color: #E5E5E5;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:1px solid #BBBBBB;
+}
+TABLE.DataGrid_ROW TR.DataGrid_TR1{
+}
+TABLE.DataGrid_ROW TR.DataGrid_TR1 TD, TABLE.DataGrid_ROW TR.DataGrid_TR2 TD{
+	padding-top:3px;
+	padding-bottom:2px;
+	border-bottom: 1px solid #DDDDDD;
+}
+TABLE.DataGrid_ROW TR.DataGrid_TR2{
+	background-color: #F4F4F4;
+}
+
+TABLE.DataGrid_BORDER{
+	border-collapse: collapse;
+	border:1px solid #DDDDDD;
+}
+TABLE.DataGrid_BORDER TR.DataGrid_HeadStyle {
+}
+TABLE.DataGrid_BORDER TR.DataGrid_LineTop {
+	display: none;
+}
+TABLE.DataGrid_BORDER TR.DataGrid_HeadStyle TD{
+	background-color: #E5E5E5;
+	padding-top:3px;
+	padding-left:8px;
+	padding-right:8px;
+	padding-bottom:3px;
+	border: 1px solid #DDDDDD;
+	border-collapse: collapse;
+}
+TABLE.DataGrid_BORDER TR.DataGrid_TR1{
+}
+TABLE.DataGrid_BORDER TR.DataGrid_TR1 TD, TABLE.DataGrid_BORDER TR.DataGrid_TR2 TD{
+	padding-top:2px;
+	padding-left:8px;
+	padding-right:8px;
+	padding-bottom:2px;
+	border: 1px solid #DDDDDD;
+	border-collapse: collapse;
+}
+TABLE.DataGrid_BORDER TR.DataGrid_TR2 TD {
+	background-color: #F9F9F9;
+}
+TABLE.DataGrid_BORDER TR.DataGrid_TR2{
+}
+
+/**/
+
+TABLE.portlet_ctrl2{
+	/*BACKGROUND-COLOR: #F4F5F9;*/
+	BACKGROUND-COLOR: #FFFFFF;
+	border-width: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+TABLE.portlet_ctrl2 TR{
+}
+TABLE.portlet_ctrl2 TD{
+	text-align: right;
+	border-bottom-color: #EEF3FB;
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+}
+
+/** ---------------- **/
+div.PortletContentTab
+{
+	text-align:left;
+}
+div.PortletContentTab table.PortletContentTab
+{
+
+}
+div.PortletContentTab table.PortletContentTab td.PCT_tab
+{
+	height:16px;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	font-size:12px;
+	padding-left:5px;
+	padding-right:5px;
+	background-color: #EFEEEF;
+	vertical-align: bottom;
+	width:1px;
+}
+div.PortletContentTab table.PortletContentTab td.PCT_tab a
+{
+	text-decoration: none;
+}
+div.PortletContentTab table.PortletContentTab td.PCT_normal
+{
+	line-height:17px;
+	border-bottom:solid 1px #CCCCCC;
+}
+div.PortletContentTab table.PortletContentTab td.PCT_selected
+{
+	background-color:#ffffff;
+	background-position:bottom;
+	background-repeat:no-repeat;
+	border-left:inset;
+	border-left-width:1px;
+	border-top:inset;
+	border-top-width:1px;
+	border-right:inset;
+	border-right-width:1px;
+}
+div.PortletContentTab table.PortletContentTab td.PCT_last
+{
+	border-bottom:solid 1px #CCCCCC;
+	background-color: #EFEEEF;
+}
+div.PortletContentTab div.PCT_page
+{
+	padding-top:5px;
+	border-left:inset;
+	border-left-width:1px;
+	border-bottom:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	/*height:40px;*/
+	overflow:visible;
+}
+
+/**----- from immobility.css------**/
+
+Table.QueryForm {
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: normal;
+}
+Table.QueryForm TR{
+	line-height : 25px;
+	vertical-align: middle;
+}
+Table.QueryForm TD{
+	line-height : 25px;
+	vertical-align: middle;
+}
+Table.QueryForm TD.Data{
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+Table.QueryForm TD.Title
+{
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-align: right;
+	line-height : 25px;
+	vertical-align: middle;
+}
+Table.QueryForm TD.Title_RED
+{
+	color:#ff0000;
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	line-height : 25px;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+Table.QueryForm TD.Title_LEFT
+{
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+	line-height : 25px;
+	padding-left: 1px;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+Table.QueryForm TD.Title_RIGHT{
+	background-color: #f7faf7;
+	text-align: right;
+	padding-right: 20px;
+	vertical-align: middle;
+}
+Table.QueryForm TD.Title_CENTER
+{
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	line-height : 25px;
+	padding-left: 1px;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+TABLE.QueryInnerForm {
+	padding: 5px
+}
+
+Table.QueryForm SPAN.Title
+{
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+	line-height: 25px;
+	vertical-align: middle;
+	height:25px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+Table.QueryForm SPAN.Data{
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+	line-height: 25px;
+	vertical-align: middle;
+	height:25px;
+	padding: 0px;
+}
+Table.QueryForm TD.button{
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+	line-height: 25px;
+	vertical-align: middle;
+	height:25px;
+	padding: 0px;
+	padding-left:40px;
+}
+/*--菜单portlet内置风格--*/
+div.category{
+	padding-bottom: 10px;
+}
+div.category .categoryTitle{
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	font-weight:bold;
+	padding:2px;
+	cursor:pointer;
+}
+div.category .categoryTitleExpanded{
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	font-weight:bold;
+	padding:2px;
+	cursor:pointer;
+}
+div.category div.item img{
+	position: relative;
+	top:2px;
+}
+
+ /*菜单portlet 普通显示样式*/
+div.normal .categoryTitle{
+	padding-left:14px;
+	height:16px;
+	line-height:16px;
+	background:url("/images/icon/menudot.gif") no-repeat left 45%;
+}
+div.normal .categoryTitleExpanded{
+	height:16px;
+	line-height:16px;
+	padding-left:14px;
+	background:url("/images/icon/menudotb.gif") no-repeat left 45%;
+	text-align: left;
+}
+div.normal .categoryTitle_Line{
+	background:url("/images/icon/menuline.gif") no-repeat bottom right;
+	line-height: 2px;
+	height:2px;
+}
+div.normal span.comment{
+	color:gray;
+}
+div.normal img.scale{
+	line-height: 10px;
+	height:10px;
+	margin:0 3px
+}
+div.normal td.summary{
+	width:138px;
+}
+
+
+tr.DataGrid_TR1 td{ padding-top:4px; }
+
+/*双行列表*/
+.grid em{
+	 font:normal 12px/1.5 ; color:#f60; 
+	 }
+.grid span.subtitle{
+	display:block;
+	color:#999;
+	padding:1px 0px 3px 8px;
+}
+a.disabled{
+  color:#999;
+  text-decoration: none;
+}
+.sub{color:#0099ff;padding-left:16px;font-weight:bold; }
+.taskTitle .sub{color:#666; }
+.gridBody{ color:#000;  border-collapse:collapse; }
+.gridBody .header td{ font-weight:bold;border:1px solid #bbb; background:#e5e5e5; }
+.gridBody td{  border:1px solid #ddd; }
+.gridBody .even td{ background:#f9f9f9; }
+.gridBody td.empty{color:#666;align:center;}
+.grpCaption{ 
+	padding:3px; 
+	margin:10px 0px 5px 0px;
+	background:#210f7a; 
+	color:#ffffff;
+	font-weight:bold;
+	width:100%;
+	height:20px;
+}
+.notify_icon{
+	display:inline-block;width:40px;
+}

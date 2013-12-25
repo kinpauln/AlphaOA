@@ -1,0 +1,217 @@
+
+#header{
+	background:url(images/title/header.jpg) repeat-x 0 0;
+}
+#header #wrapper{
+	width:100%;
+	height:65px;
+	position:relative;
+	background:url(images/title/header.jpg) no-repeat right -100px;
+}
+#logo{
+	padding-left:20px;
+	float:left;
+}
+#logo h1{
+	font:22px/60px "Î¢ÈíÑÅºÚ";
+	color:#000;
+	background:url(/images/logo/logo_48.png) no-repeat 0 center;
+	text-indent:52px;
+}
+
+.ext-ie6 #logo h1 {
+    background:none;
+    margin-top : 5px;
+    width:380px;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/logo/logo_48.png', sizingMethod='crop');
+} 
+#user{
+	float:left;
+	padding:14px 0 0 10px;
+}
+#user p{
+	font:12px/1.5 tahoma;
+	color:#000;
+}
+#user p em{
+	font:12px/1.5 tahoma;
+}
+#user p strong{
+}
+#user p em a{
+	width:16px;
+	height:16px;
+	margin:0 2px;
+	display:inline-block;
+	color:#fff;
+	overflow:hidden;
+}
+#user p em a#home{ background:url(images/title/ico_home.gif) no-repeat 0 0; }
+#user p em a#edit{ background:url(images/title/ico_edit.gif) no-repeat 0 0; }
+#user p em a#mock{ background:url(images/title/ico_mock.gif) no-repeat 0 0; }
+#user p em a#cancelMock{ background:url(images/title/ico_cancelmock.gif) no-repeat 0 0; }
+#user p em a#theme{ background:url(/skin/images/icons/color.gif) no-repeat 0 0px; }
+#user p em a#userproject{ background:url(/images/icon/project.gif) no-repeat 0 0; }
+
+#user p em a#collapseBtn {
+	position:absolute;
+	top:-1;
+	left:48%;
+	width:35px;
+	background:url(images/title/collapse.gif) no-repeat 0 0;
+	border: 0px;
+}
+
+#top_nav{
+	position:absolute;
+	right:30px;
+	top:20px;
+}
+#top_nav li{
+	float:left;
+	margin-right:10px;
+	font:12px/1.5  tahoma;
+	color:#000;
+}
+#top_nav li a{
+	color:#000;
+	text-decoration:none;
+}
+#top_nav li a:hover{
+	text-decoration:underline;
+}
+#top_nav li a img{ margin-right:3px; vertical-align:middle; }
+
+
+.lb-header-category .x-splitbar-v,
+.lb-header-category .x-layout-collapsed-north 
+{
+	background:#c00000 !important;
+}
+.lb-main-tb{
+	height:28px !important;
+	background:url(images/title/nav.gif) repeat-x 0 -53px !important;
+	
+}
+.lb-main-tb{
+	padding:0px !important;
+}
+.x-panel-bbar .x-toolbar {
+	padding:0px !important;
+}
+
+.lb-main-tb .x-btn-menu-active .x-btn-tl,.lb-main-tb .x-btn-menu-active .x-btn-tr,
+.lb-main-tb .x-btn-menu-active .x-btn-tc,.lb-main-tb .x-btn-menu-active .x-btn-ml,
+.lb-main-tb .x-btn-menu-active .x-btn-mr,.lb-main-tb .x-btn-menu-active .x-btn-mc,
+.lb-main-tb .x-btn-menu-active .x-btn-bl,.lb-main-tb .x-btn-menu-active .x-btn-br,
+.lb-main-tb .x-btn-menu-active .x-btn-bc{
+	background:none;
+}
+.lb-main-tb .x-btn-over  .x-btn-tl,.lb-main-tb .x-btn-over  .x-btn-tr,
+.lb-main-tb .x-btn-over  .x-btn-tc,.lb-main-tb .x-btn-over  .x-btn-ml,
+.lb-main-tb .x-btn-over  .x-btn-mr,.lb-main-tb .x-btn-over  .x-btn-mc,
+.lb-main-tb .x-btn-over  .x-btn-bl,.lb-main-tb .x-btn-over  .x-btn-br,
+.lb-main-tb .x-btn-over  .x-btn-bc{
+	background:none;
+	
+}
+.lb-main-tb .x-btn-menu-active .x-btn-text,
+.lb-main-tb .x-btn-over .x-btn-text{
+	color:#fff;
+}
+
+.lb-main-tb .x-btn  .x-btn-tr,
+.lb-main-tb .x-btn  .x-btn-tc,
+.lb-main-tb .x-btn  .x-btn-tl,
+.lb-main-tb .x-btn  .x-btn-br,
+.lb-main-tb .x-btn  .x-btn-bc,
+.lb-main-tb .x-btn  .x-btn-bl
+{
+	height:0px !important;
+	display : none;
+}
+.lb-main-tb .x-btn em button{
+	height:25px !important;
+	color:#fff;
+	font-size:12px !important;
+}
+.ext-ie6 .lb-main-tb .x-btn em button{
+		height:25px;
+		font:12px/25px tahoma;
+}
+
+.lb-main-tb .x-btn-mc em.x-btn-arrow {
+	background-image:url(images/xtheme/button/arrow.gif);
+}
+
+.lb-main-tb .x-btn-over .x-btn-ml,
+.lb-main-tb .x-btn-menu-active .x-btn-ml{
+}
+.lb-main-tb .x-btn-over .x-btn-mr,
+.lb-main-tb .x-btn-menu-active .x-btn-mr{
+}
+.lb-main-tb .x-btn  .x-btn-mc ,.lb-main-tb .x-btn-menu .x-btn-mc{
+	
+}
+.lb-main-tb .x-btn-over  .x-btn-mc ,.lb-main-tb .x-btn-menu-active .x-btn-mc{
+}
+
+.lb-main-tb .x-btn-over .x-btn-mc .x-btn-text,.lb-main-tb .x-btn-menu-active .x-btn-mc .x-btn-text{
+	color:#f00 !important;
+}
+.lb-main-tb .x-btn .x-btn-mc .x-btn-arrow em,.lb-main-tb .x-btn-menu .x-btn-mc .x-btn-arrow em{
+	padding:0px 8px 0px 0px !important;
+}
+.lb-main-tb .x-btn-over .x-btn-mc .x-btn-arrow em,.lb-main-tb .x-btn-menu-active .x-btn-mc .x-btn-arrow em{
+	padding:0px 8px 0px 0px !important;
+}
+
+.ext-ie .lb-main-tb .x-btn .x-btn-text {
+	padding: 0px 3px 0px 3px !important;
+} 
+
+.lb-header-category .lb-main-tb
+{
+	border-top : 0px solid !important;
+}
+
+#titleTab{
+	width:100%;
+	float:left;
+	background:url(images/title/nav.gif) repeat-x 0 0;
+}
+#titleTab ul{
+	width:100%;
+	float:left;
+	background:url(images/title/nav.gif) 0 0;
+}
+#titleTab ul li{
+	float:left;
+}
+#titleTab ul li a{
+	float:left;
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+#titleTab ul li a em{
+	float:left;
+	height:32px;
+	padding:0 10px;
+	font:12px/28px tahoma;
+	background:url(images/title/nav.gif) no-repeat right -100px;
+}
+.ext-ie6 #titleTab ul li a em{
+	padding-top:2px;
+}
+#titleTab ul li a:hover, #titleTab ul li.selected a{
+	color:#fff;
+}
+#titleTab ul li a:hover em, #titleTab ul li.selected a em{
+	background:url(images/title/nav.gif) no-repeat right -150px;
+}
+#titleTab ul li a:hover{ cursor:pointer; }
+#titleTab ul li.selected a, #titleTab ul li.selected a em{ cursor:text}
+.lb-main-tree .x-tree-node-leaf .x-tree-node-icon{
+	background-image:url(/images/icon/menuitem.gif) !important;
+}
